@@ -1,0 +1,14 @@
+/* load the default Redmine stylesheet */
+@import url(../../../stylesheets/application.css);
+
+/* add a logo in the header */
+#header {
+    background: #507AAA url(../images/owl.png) no-repeat 2px;
+    padding-left: 86px;
+}
+
+#header > H1 {
+  font-family: fantasy;
+  color: antiquewhite;
+}
+
