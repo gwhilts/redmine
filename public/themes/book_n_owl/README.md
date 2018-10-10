@@ -13,7 +13,7 @@ Licensed under the MIT License
 
 #### Supported Redmine versions.
 
-* Redmine 3.0.x
+* Redmine 3.4.x
 
 #### Derived from "Redmine Alex Skin"
 
