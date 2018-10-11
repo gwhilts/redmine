@@ -4,6 +4,16 @@
     #header{
         background-color: #69AD15;
     }
+
+    .flyout-menu {
+      background-color: rgb(155, 180, 138);
+    }
+
+    .flyout-menu h3 {
+      border-top: 1px solid rgb(155, 180, 138);
+      border-bottom: 1px solid rgb(155, 180, 138);
+      background-color:rgb(39, 63, 26)
+      }
 }
 
 @media all and (max-width: 599px) {
@@ -18,5 +28,24 @@
         width: 35%;
         overflow: hidden;
     }
+
+    .flyout-menu {
+      background-color: rgb(155, 180, 138);
+    }
 }
+
+@media screen and (max-width: 899px), all {
+  .flyout-menu {
+    position: absolute;
+    right: -250px;
+    display: block;
+    overflow-x: hidden;
+    width: 250px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(155, 180, 138);
+  }
+ }
 
