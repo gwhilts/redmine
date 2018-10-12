@@ -15,6 +15,10 @@ gem "mimemagic"
 gem "mail", "~> 2.6.4"
 gem "csv", "~> 1.0.2" if RUBY_VERSION >= "2.3"
 
+gem 'puma', '~> 3.12'
+
+gem 'rack-timeout'
+
 gem "nokogiri", "~> 1.8.0"
 gem "i18n", "~> 0.7.0"
 
@@ -48,37 +52,6 @@ platforms :mri, :mingw, :x64_mingw do
   end
 end
 
-# Include database gems for the adapters found in the database
-# configuration file
-require 'erb'
-require 'yaml'
-# database_file = File.join(File.dirname(__FILE__), "config/database.yml")
-# if File.exist?(database_file)
-#   database_config = YAML::load(ERB.new(IO.read(database_file)).result)
-#   adapters = database_config.values.map {|c| c['adapter']}.compact.uniq
-#   if adapters.any?
-#     adapters.each do |adapter|
-#       case adapter
-#       when 'mysql2'
-#         gem "mysql2", "~> 0.5.0", :platforms => [:mri, :mingw, :x64_mingw]
-#       when /postgresql/
-#         gem "pg", "~> 1.0.0", :platforms => [:mri, :mingw, :x64_mingw]
-#       when /sqlite3/
-#         gem "sqlite3", "~>1.3.12", :platforms => [:mri, :mingw, :x64_mingw]
-#       when /sqlserver/
-#         gem "tiny_tds", "~> 1.0.5", :platforms => [:mri, :mingw, :x64_mingw]
-#         gem "activerecord-sqlserver-adapter", :platforms => [:mri, :mingw, :x64_mingw]
-#       else
-#         warn("Unknown database adapter `#{adapter}` found in config/database.yml, use Gemfile.local to load your own database gems")
-#       end
-#     end
-#   else
-#     warn("No adapter found in config/database.yml, please configure it first")
-#   end
-# else
-#   warn("Please configure your config/database.yml first")
-# end
-
 group :production do
   gem 'pg', '~> 1.0'
 end
@@ -93,7 +66,6 @@ group :test do
   gem "mocha"
   gem "simplecov", "~> 0.14.1", :require => false
   # For running system tests
-  gem 'puma', '~> 3.7'
   gem "capybara", '~> 2.13'
   gem "selenium-webdriver"
 end
