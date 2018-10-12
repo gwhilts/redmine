@@ -1,6 +1,6 @@
-require File.expand_path('../boot', __FILE__)
+require File.expand_path("../boot", __FILE__)
 
-require 'rails/all'
+require "rails/all"
 
 Bundler.require(*Rails.groups)
 
@@ -38,9 +38,10 @@ module RedmineApp
 
     # Enable the asset pipeline
     config.assets.enabled = false
+    config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.assets.version = "1.0"
 
     config.action_mailer.perform_deliveries = false
 
@@ -69,11 +70,11 @@ module RedmineApp
     config.log_level = Rails.env.production? ? :info : :debug
 
     config.session_store :cookie_store,
-      :key => '_redmine_session',
-      :path => config.relative_url_root || '/'
+      :key => "_redmine_session",
+      :path => config.relative_url_root || "/"
 
-    if File.exists?(File.join(File.dirname(__FILE__), 'additional_environment.rb'))
-      instance_eval File.read(File.join(File.dirname(__FILE__), 'additional_environment.rb'))
+    if File.exists?(File.join(File.dirname(__FILE__), "additional_environment.rb"))
+      instance_eval File.read(File.join(File.dirname(__FILE__), "additional_environment.rb"))
     end
   end
 end
