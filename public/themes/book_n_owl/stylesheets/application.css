@@ -331,7 +331,7 @@ a.no_line, a.icon, tr.issue td.subject a.icon, tr.issue td.id a.icon, a.issue.ic
 #dropdown_top_menu .dropdown-menu > li a:hover,
 #dropdown_top_menu .dropdown-menu > li > div.menu-item:hover,
 .dropdown-menu > li > div.menu-item:hover > a {
-  background-color: #4D96DA;
+  background-color: #9bb48a;
   text-decoration: none;
 }
 
@@ -343,12 +343,12 @@ a.no_line, a.icon, tr.issue td.subject a.icon, tr.issue td.id a.icon, a.issue.ic
 
 #top-menu .dropdown-menu > li > div.title a:hover {
   background-image: none;
-  color: #147DC0;
+  color: #9bb48a;
 }
 
 #top-menu .dropdown-menu > li > div.title a:hover > span {
-  border-bottom-color: #147DC0;
-  color: #147DC0;
+  border-bottom-color: #9bb48a;
+  color: #9bb48a;
 }
 
 #dropdown_top_menu a span.count,
@@ -732,8 +732,8 @@ h2, .wiki h1, .wiki h2,  .wiki h3,  .wiki h4, .wiki h5 {
 .ui-menu-item a.ui-state-focus {
   background: none;
   border: none;
-  border-bottom-color: #147dc0;
-  color: #147dc0;
+  border-bottom-color: #9bb48a;
+  color: #9bb48a;
   border-bottom-style: dotted;
   border-bottom-width: 1px;
 }
@@ -791,8 +791,8 @@ a.issue:hover,
 #main-menu .menu-children li a:hover,
 #main-menu li a:hover span,
 a:hover.no_line span {
-  border-bottom-color: #147dc0;
-  color: #147dc0;
+  border-bottom-color: #9bb48a;
+  color: #9bb48a;
 }
 
 #main-menu .tabs-buttons {
@@ -800,7 +800,7 @@ a:hover.no_line span {
 }
 
 div.issue a.rm-icon:hover:before {
-  color: #147dc0;
+  color: #9bb48a;
 }
 
 a.no_line.selected:hover span {
@@ -886,7 +886,7 @@ div.wiki a, .subject h3, .description .wiki{
 .controller-issues li.ui-menu-item.ui-state-focus{
   background: none;
   border: none;
-  color: #147dc0;
+  color: #9bb48a;
   font-weight: normal;
   margin: 0;
 }
@@ -894,7 +894,7 @@ div.wiki a, .subject h3, .description .wiki{
 .controller-sd_requests.action-show li.ui-menu-item.ui-state-focus{
   background: none;
   border: none;
-  color: #147dc0;
+  color: #9bb48a;
   font-weight: normal;
   margin: 0;
 }
@@ -932,9 +932,6 @@ span.pagination li > a {
 .pagination ul.pages li > span {
   padding: 3px 8px;
 }
-span.pagination li > a.in_link span {
-  /*border-bottom: none;*/
-}
 
 .pagination ul.pages li.current{
   background-color: #ef7f1a;
@@ -943,8 +940,8 @@ span.pagination li > a.in_link span {
 
 .pagination ul.pages li.page a:hover,
 .pagination ul.pages li.page a:active {
-  border-bottom-color: #147dc0;
-  color: #147dc0;
+  border-bottom-color: #9bb48a;
+  color: #9bb48a;
 }
 
 .ld_photo img.gravatar{
